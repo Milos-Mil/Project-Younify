@@ -1,0 +1,291 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main{
+    overflow: hidden;
+}
+button{
+    cursor: pointer;
+    border: none;
+    height: 35px;
+    width: 35px;
+}
+input{
+    border:none;
+    height: 35px;
+}
+.searchbtn{
+    height: 35px;
+    width: 35px;
+}
+.subtext{
+    color: gray;
+    font-size: smaller;
+}
+.topheader{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+.searchbar{
+    display: inline-block;
+    height: 35px;
+    max-width: 300px;
+}
+.logo{
+    height: 40px;
+}
+.botheader{
+    display: inline-flex;
+    justify-content: space-between;
+    height: 40px;
+    width: 100%;
+}
+.category{
+    display: flex;
+    height: 40px;
+}
+.categoryDiv{
+    display: inline-block;
+    height: 40px;
+    width: 100px;
+}
+.categorybtn{
+    height: 40px;
+    width: 90px;
+    background-color: white;
+}
+.dropdown{
+    z-index: 1;
+    width: 100px;
+    height: 40px;
+    display: none;
+    position: absolute;
+}
+.AccDropdown{
+    background-color: orange;
+}
+.category :hover .dropdown{
+    display: block;
+}
+.support :hover .dropdown{
+    display: block;
+}
+.support{
+    display: flex;
+    height: 40px;
+}
+.supportDiv{
+    display: inline-block;
+    height: 40px;
+    width: 91px;
+    margin-right: 5px;
+    z-index: 1;
+}
+.supportbtn{
+    height: 40px;
+    width: 91px;
+    background-color: white;
+}
+.Carousel{
+    overflow: hidden;
+    width: 100%;
+    z-index: -1;
+}
+.CarouselContainer{
+    height: 400px;
+    width: 100%;
+    display: none;
+}
+#CarouselMessage1{
+    z-index: 1;
+    position: relative;
+    bottom: 400px;
+    left: 2%;
+    color: ivory;
+    font-size: 120%;
+}
+#CM1btn{
+    background-color: turquoise;
+    width: 140px;
+    height: 40px;
+    color: ivory;
+    border-radius: 10px;
+    font-size: 90%;
+}
+.dots_nav{
+    z-index: 1;
+    position: relative;
+    bottom: 60px;
+    margin-left: 50%;
+    cursor: pointer;
+}
+.dot{
+    display: inline-block;
+    z-index: 1;
+    background-color: azure;
+    height: 15px;
+    width: 15px;
+    margin: 0 10px;
+    border-radius: 50%;
+    opacity: 50%;
+}
+.current_dot{
+    z-index: 1;
+    opacity: 100%;
+}
+.InformationDiv{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.InformationText{
+    font-size: 70%;
+    color: rgb(157, 169, 180);
+}
+.InformationBlock{
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    width: 30%;
+}
+.InformationBtn{
+    width: 100%;
+    font-size: 70%;
+    color: turquoise;
+    background-color: white;
+}
+.Slider{
+    background-color: lightgray;
+}
+.SliderDiv{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: 130%;
+    justify-content: flex-start;
+    margin: 3%;
+    right: 0%;
+}
+.SliderBlock{
+    margin: 0.5%;
+    width: 12.3%;
+    background-color: white;
+}
+.SliderInfo{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.Sdots_nav{
+    position: relative;
+    margin-left: 47%;
+    margin-top: 30px;
+    
+}
+.SliderDot{
+    display: inline-block;
+    z-index: 1;
+    background-color: black;
+    height: 10px;
+    width: 10px;
+    margin: 0px 10px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.SliderNav{
+    display: inline-block;
+    justify-content: space-between;
+
+}
+.SliderRight, .SliderLeft{
+    display: inline-block;
+    width: 75px;
+    text-align: center;
+    font-size: 300%;
+    color: white;
+    opacity: 60%;
+    position: relative;
+    bottom: 300px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    cursor: pointer;
+    background-color: lightgray;
+}
+.SliderRight{  
+    border-radius: 0 15px 15px 0;
+    left: 91.8%;
+}
+.SliderLeft{
+    border-radius: 15px 0 0 15px;
+}
+.SliderRight:hover, .SliderLeft:hover {
+    background-color: gray;
+}
+.SliderCurrentDot{
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: solid black 1px;
+}
+.SliderOtherDot{
+    position: relative;
+    margin-bottom: 5px;
+}
+#sliderText{
+    display: flex;
+    position: relative;
+    bottom: -30px;
+    margin-left: 4%;
+    font-weight: bold;
+    font-size: 25px;
+}
+.AdvertiseDiv{
+    overflow: auto;
+    display: flex;
+    justify-content:stretch;
+    width: 100%;
+    height: 385px;
+    margin: 0px;
+}
+.AdvertiseBlock{
+    display: inline-block;
+    height: 375px;
+    width: 33.333%;
+}
+.AdvertiseText{
+    position: relative;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.AdvertiseBtn{
+    position: relative;
+    background-color: transparent;
+    width: auto;
+}
+.MediaLinks{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.SocialMediaBtn{
+    background-color: white;
+    border-radius: 100%;
+    color: white;
+}
+.FooterDiv{
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgray;
+    text-align: left;
+}
+.FooterLinks{
+    text-decoration: none;
+    color: darkgrey;
+    text-align: left;
+    margin: auto;
+}
+

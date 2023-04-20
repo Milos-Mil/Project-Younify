@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Younify home page</title>
+
+</head>
+<body>
+    <header>
+        <div class="topheader">
+            <img src="/img/younify_konferencije_logo.jpg">
+            <form action="" class="searchbar">
+                <input type="text" placeholder="Search entire store here...">
+                <button type="submit" class="searchbtn " style="background-color: white;"><img height="12px" width="auto" src="/img/search_button.png" ></button>
+                <button id="advsearch" style="background-color: white;">&#8942</button>
+            </form>
+            <div class="subtext" style="cursor: pointer;">Call +31(0)613938947</div>
+        </div>
+        <div class="botheader">
+          <div class="category">
+            <div class="categoryDiv">
+                <button class="categorybtn">Home</button>
+            </div>
+            <div class="categoryDiv">
+                <button class="categorybtn">Men</button>
+                <div class="dropdown">
+                    <a>subcategory 1</a>
+                    <a>subcategory 2</a>
+                    <a>subcategory 3</a>
+                </div> 
+            </div>
+            <div class="categoryDiv">
+                <button class="categorybtn">Women</button>
+                <div class="dropdown">
+                    <a>subcategory 1</a>
+                    <a>subcategory 2</a>
+                    <a>subcategory 3</a>
+                </div> 
+            </div>
+            <div class="categoryDiv">
+                <button class="categorybtn">Electronics</button>
+                <div class="dropdown">
+                    <a>subcategory 1</a>
+                    <a>subcategory 2</a>
+                    <a>subcategory 3</a>
+                </div> 
+            </div>
+            <div class="categoryDiv">
+                <button class="categorybtn">Digital</button>
+                <div class="dropdown">
+                    <a>subcategory 1</a>
+                    <a>subcategory 2</a>
+                    <a>subcategory 3</a>
+                </div> 
+            </div>
+            <div class="categoryDiv">
+                <button class="categorybtn">Custom</button>
+                <div class="dropdown">
+                    <a>subcategory 1</a>
+                    <a>subcategory 2</a>
+                    <a>subcategory 3</a>
+                </div> 
+            </div>
+          </div>
+          <div class="support">
+            <div class="supportDiv">
+                <button class="supportbtn" style="width: 110%;"><a class="subtext">Hello,sign in</a><br>Your Account</button>
+                <div class="dropdown AccDropdown">
+                    Username <input type="text">
+                    Password <input type="text">
+                    <button>Log in</button>
+                </div> 
+            </div>
+            <div class="supportDiv">
+                <button class="supportbtn">
+                    <a class="subtext" class="cart_items" href="" style="text-decoration: none;">0 items</a>
+                    <br> <img src="/img/buy_icon.png" style="height: 20px;"> Cart
+                </button>
+                <div class="dropdown">
+                    Placeholder 1 <br>
+                    Placeholder 2 <br>
+                </div> 
+            </div>
+          </div>  
+        </div>
+    </header>
+    <br>
+    <main>
+        <div class="Carousel">
+            <div class="CarouselContainer">
+                <img src="/img/girl_on_a_mountain.avif" width="100%" height="400px" style="z-index: -1;">
+                <div id="CarouselMessage1">
+                    <p style="font-size: 200%;">Remarkably Crisp <br> and Clear</p> 
+                    <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit,<br>
+                        sed do eiusmod tempor  incididunt ut labore et <br>
+                        dolore magna aliqua.
+                    </p> 
+                    <a href="#top"><button id="CM1btn">Learn more</button></a>
+                </div>
+                <div></div>
+            </div>
+            <div class="CarouselContainer">
+                <img src="/img/man_sea.jpg" alt="" width="100%" height="400px">
+            </div>
+            <div class="dots_nav">
+                <div class="dot" onclick="CurrentCarousel(1)"></div>
+                <div class="dot" onclick="CurrentCarousel(2)"></div>
+            </div>
+        </div>
+        <div class="InformationDiv">
+            <div class="InformationBlock" >
+                <img src="/img/puzzle_icon.png" style="height: 55px; width: 55px;"> <br>
+                <strong>Less Has never been more.</strong>
+                <div class="InformationText">
+                    Excepteur sint occaecat cupidatat non proident, <br>
+                    sunt in culpa qui officia deserunt mollit <br>
+                    anim id est laborum
+                </div>
+                <a href="#top">
+                    <button class="InformationBtn">Learn more ></button>
+                </a>
+            </div>
+            <div class="InformationBlock">
+                <img src="/img/gear_icon.png" style="height: 55px; width: 55px;"> <br>
+                <strong>So many different options.</strong>
+                <div class="InformationText">
+                    Duis aute irure dolor in reprehenderit <br>
+                    in voluptate velit esse cillum dolore <br>
+                    eu fuiat nulla pariatur <br>
+                </div>
+                <a href="#top">
+                    <button class="InformationBtn">Learn more ></button>
+                </a>
+            </div>
+            <div class="InformationBlock">
+                <img src="/img/tool_icon.png" style="height: 55px; width: 55px;"> <br>
+                <strong>Free support & updates.</strong>
+                <div class="InformationText">
+                    ut enim ad minima veniam,<br>
+                    quis nostrum exercitationem ullam corporis<br>
+                    subscipit laboriosam, nisi ut aliquid ex ea<br>
+                </div>
+                <a href="#top">
+                    <button class="InformationBtn">Learn more ></button>
+                </a>
+            </div>
+        </div>
+        <div class="Slider">
+            <div id="sliderText">New Arrivals</div>
+            <div class="SliderDiv">
+                <div class="SliderBlock">
+                    <img src="/img/missing_product_image.png" style="width: 100%;"> <br>
+                    Product Name <br>
+                    Product Price, Product Rating
+                    <div class="SliderInfo">
+                        <div>
+                            <button"><img src="/img/buy_icon.png" style="height: 30px;" ></button>
+                            Add to Cart
+                        </div>
+                        <div>
+                            <button><img src="/img/copy_icon.png" style="height: 30px;" ></button>
+                            <button><img src="/img/heart_icon.png" style="height: 30px;" ></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="SliderBlock">
+                    <img src="/img/missing_product_image.png" style="width: 100%;"><br>
+                    Product Name <br>
+                    Product Price, Product Rating
+                    <div class="SliderInfo">
+                        <div>
+                            <button"><img src="/img/buy_icon.png" style="height: 30px;" ></button>
+                            Add to Cart
+                        </div>
+                        <div>
+                            <button><img src="/img/copy_icon.png" style="height: 30px;" ></button>
+                            <button><img src="/img/heart_icon.png" style="height: 30px;" ></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="SliderBlock">
+                    <img src="/img/missing_product_image.png" style="width: 100%;"> <br>
+                    Product Name <br>
+                    Product Price, Product Rating
+                    <div class="SliderInfo">
+                        <div>
+                            <button"><img src="/img/buy_icon.png" style="height: 30px;" ></button>
+                            Add to Cart
+                        </div>
+                        <div>
+                            <button><img src="/img/copy_icon.png" style="height: 30px;" ></button>
+                            <button><img src="/img/heart_icon.png" style="height: 30px;" ></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="SliderBlock">
+                    <img src="/img/missing_product_image.png" style="width: 100%;"><br>
+                    Product Name <br>
+                    Product Price, Product Rating
+                    <div class="SliderInfo">
+                        <div>
+                            <button"><img src="/img/buy_icon.png" style="height: 30px;" ></button>
+                            Add to Cart
+                        </div>
+                        <div>
+                            <button><img src="/img/copy_icon.png" style="height: 30px;" ></button>
+                            <button><img src="/img/heart_icon.png" style="height: 30px;" ></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="SliderBlock">
+                    <img src="/img/missing_product_image.png" style="width: 100%;"><br>
+                    Product Name <br>
+                    Product Price, Product Rating
+                    <div class="SliderInfo">
+                        <div>
+                            <button"><img src="/img/buy_icon.png" style="height: 30px;" ></button>
+                            Add to Cart
+                        </div>
+                        <div>
+                            <button><img src="/img/copy_icon.png" style="height: 30px;" ></button>
+                            <button><img src="/img/heart_icon.png" style="height: 30px;" ></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="SliderBlock">
+                    <img src="/img/missing_product_image.png" style="width: 100%;"><br>
+                    Product Name <br>
+                    Product Price, Product Rating
+                    <div class="SliderInfo">
+                        <div>
+                            <button"><img src="/img/buy_icon.png" style="height: 30px;" ></button>
+                            Add to Cart
+                        </div>
+                        <div>
+                            <button><img src="/img/copy_icon.png" style="height: 30px;" ></button>
+                            <button><img src="/img/heart_icon.png" style="height: 30px;" ></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="SliderBlock">
+                    <img src="/img/missing_product_image.png" style="width: 100%;"><br>
+                    Product Name <br>
+                    Product Price, Product Rating
+                    <div class="SliderInfo">
+                        <div>
+                            <button"><img src="/img/buy_icon.png" style="height: 30px;" ></button>
+                            Add to Cart
+                        </div>
+                        <div>
+                            <button><img src="/img/copy_icon.png" style="height: 30px;" ></button>
+                            <button><img src="/img/heart_icon.png" style="height: 30px;" ></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Sdots_nav">
+                <div class="SliderDot SliderCurrentDot" onclick="Slider(0)"></div>
+                <div class="SliderDot SliderOtherDot" onclick="Slider(1)"></div>
+                <div class="SliderDot SliderOtherDot" onclick="Slider(2)"></div>
+            </div>
+            <div class="SliderLeft" onclick="SliderPlus(-1)">&#10094</div>
+            <div class="SliderRight"onclick="SliderPlus(+1)">&#10095</div>
+        </div>
+        <div class="Advertise">
+            <div class="AdvertiseDiv">
+                <div class="AdvertiseBlock">
+                    <img src="/img/men_stretch.jpg" style="height: 375px; width: 100%;">
+                    <div class="AdvertiseText" style="bottom: 130px;text-align:right ;">
+                        <strong style="font-size: 170%; color: white;">Up to 50% Off <br>Men's Shirts</strong>
+                        <div style="color: white;">Available online only</div>
+                        <button class="AdvertiseBtn" style="color: white;">Shop now ></button>
+                    </div>
+                    
+                </div>
+                <div class="AdvertiseBlock" style="background-color: rgb(236, 235, 235);">
+                    <img src="/img/shoes.jpg"style="height: 375px; opacity: 30%; width:100%">
+                    <div class="AdvertiseText" style="bottom: 28%;">
+                        <strong style="font-size: 170%; color: black;">Step Lively</strong>
+                        <div style="display: flex; color: rgb(121, 121, 121); justify-content: space-between;">
+                            Shoes from Classic to Cool
+                            <button class="AdvertiseBtn" style="color: rgb(189, 188, 188); right: 10px;">Shop now ></button>
+                        </div>      
+                    </div>
+                </div>
+                <div class="AdvertiseBlock">
+                    <img src="/img/man_train_tracks.jpg"style="height: 375px; width:100%">
+                    <div class="AdvertiseText" style="bottom: 130px;text-align:right;">
+                        <strong style="font-size: 170%; color: white;">20% Off <br> Select Styles</strong>
+                        <div style="color: rgb(170, 170, 170);">Available online only</div>
+                        <button class="AdvertiseBtn" style="color: white;">Shop now ></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="MediaLinks">
+            <div style="display:flex">
+                <a href="#top" style="text-decoration: none;">
+                    <button class="SocialMediaBtn"><img src="/img/mail_icon.png" height="31px"></button>
+                    <div style="position: relative; bottom: 10px; display: inline-block;">Subscribe to our Newsletter</div>
+                </a>
+            </div>
+            <div>
+                <a href="#top" style="text-decoration: none;">
+                    <button class="SocialMediaBtn"><img src="/img/facebook logo_icon.png" height="31px"></button>
+                </a>
+                <a href="#top" style="text-decoration: none;">
+                    <button class="SocialMediaBtn"><img src="/img/twitter logo_icon.png" height="31px"></button>
+                </a>
+                <a href="#top" style="text-decoration: none;">
+                    <button class="SocialMediaBtn"><img src="/img/instagram_logo_.png" height="31px"></button>
+                </a>
+                <a href="#top" style="text-decoration: none;">
+                    <button class="SocialMediaBtn"><img src="/img/youtube_icon.png" height="31px"></button>
+                </a>
+                <a href="#top" style="text-decoration: none;">
+                    <button class="SocialMediaBtn"><img src="/img/pinterest_icon.png" height="31px"></button>
+                </a>
+                <a href="#top" style="text-decoration: none;">
+                    <button class="SocialMediaBtn"><img src="/img/google_media_online_plus_social_icon.png" height="31px"></button>
+                </a>   
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="FooterDiv">
+            <div class="FooterBlock">
+                <p style="font-weight: bolder;">Company</p>
+                <a class="FooterLinks"href="#top">About us</a> <br>
+                <a class="FooterLinks"href="#top">Career</a> <br>
+                <a class="FooterLinks"href="#top">Press Releases</a> <br>
+                <a class="FooterLinks"href="#top">Investors</a>
+            </div>
+            <div class="FooterBlock">
+                <p style="font-weight: bolder;">Customer Service</p> 
+                <a class="FooterLinks"href="#top">FAQ</a> <br>
+                <a class="FooterLinks"href="#top">Order & Returns</a> <br>
+                <a class="FooterLinks"href="#top">Shipping Rates & Policies</a> <br>
+                <a class="FooterLinks"href="#top">International Shipping</a>
+                <a class="FooterLinks"href="#top">Contact Us</a>
+            </div>
+            <div class="FooterBlock">
+                <p style="font-weight: bolder;">Your Account</p> 
+                <a class="FooterLinks"href="#top">Your Account</a> <br>
+                <a class="FooterLinks"href="#top">Your Orders</a> <br>
+                <a class="FooterLinks"href="#top">Your Wishlist</a> <br>
+                <a class="FooterLinks"href="#top">Payment Methods</a>
+                <a class="FooterLinks"href="#top">Newsletter</a>
+            </div>
+            <div class="FooterBlock">
+                <p style="font-weight: bolder;">Contact Us</p>
+                
+                <a class="FooterLinks"href="#top">
+                    <img src="/img/location_icon.png" height="20px" style="position: relative; bottom: 30px;">
+                    <div style="display: inline-block;">
+                        Kantoor Nederland <br>Nieuwe Stationsstraat 20 <br>6811KS Arnhem
+                    </div></a> <br>
+                <a class="FooterLinks"href="#top"><img src="/img/phone_icon.png" height="20px"> +31(0)26 7009 750</a> <br>
+                <a class="FooterLinks"href="#top">
+                    <img src="/img/email_message_icon.png" height="20px">
+                    <div style="position: relative; bottom: 5px; display: inline-block;">
+                        sales@younify.eu
+                    </div>
+                </a><br>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
