@@ -7,12 +7,7 @@ a{
     color: grey;
 }
 li{
-    z-index: 1;
     list-style-type: none;
-    padding: 10px;
-    background-color: white;
-    width: 10%;
-    cursor: pointer;
 }
 main{
     overflow: hidden;
@@ -74,6 +69,13 @@ input{
     height: 40px;
     display: none;
     position: absolute;
+}
+.dropdownList{
+    z-index: 1;
+    background-color: white;
+    width: 10%;
+    cursor: pointer;
+    padding: 10px;
 }
 .category :hover .dropdown{
     display: block;
@@ -147,9 +149,10 @@ input{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    font-size: 120%;
 }
 .InformationText{
-    font-size: 70%;
+    font-size: 80%;
     color: rgb(157, 169, 180);
 }
 .InformationBlock{
@@ -160,7 +163,7 @@ input{
 }
 .InformationBtn{
     width: 100%;
-    font-size: 70%;
+    font-size: 80%;
     color: turquoise;
     background-color: white;
 }
@@ -181,6 +184,10 @@ input{
     margin: 0.5%;
     width: 12.3%;
     background-color: white;
+    font-size: 80%;
+}
+.SliderList{
+    
 }
 .SliderInfo{
     display: flex;
