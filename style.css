@@ -192,7 +192,8 @@ input{
 .SliderInfo{
     display: flex;
     justify-content: space-between;
-    margin: auto;
+    border-top: 2px solid lightgray;
+    
 }
 .Sdots_nav{
     position: relative;
