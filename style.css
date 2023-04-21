@@ -76,7 +76,6 @@ input{
     position: absolute;
 }
 .AccDropdown{
-    background-color: orange;
 }
 .category :hover .dropdown{
     display: block;
